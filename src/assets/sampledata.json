@@ -1,0 +1,222 @@
+[
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "45da6854-4fb8-4931-b2ee-533d6855b6fe",
+    "locationlongitude": 96.4343621,
+    "locationlatitude": 18.9398354,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "S",
+    "dimensions": "Goldenrod",
+    "backlight": true,
+    "facingDirection": "Avenue",
+    "available": false
+  },
+  {
+    "id": "f8a20b29-8d64-4a3a-ae21-03431051415f",
+    "locationlongitude": 119.9481515,
+    "locationlatitude": 31.7238883,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "2XL",
+    "dimensions": "Blue",
+    "backlight": false,
+    "facingDirection": "Road",
+    "available": false
+  },
+  {
+    "id": "021090db-89b2-42c9-a528-47058775b995",
+    "locationlongitude": -16.765857,
+    "locationlatitude": 32.715164,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "S",
+    "dimensions": "Teal",
+    "backlight": true,
+    "facingDirection": "Lane",
+    "available": false
+  },
+  {
+    "id": "aca1628a-2b62-4cba-a8a1-5131dc9eef18",
+    "locationlongitude": 12.2416715,
+    "locationlatitude": 9.2894242,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Puce",
+    "backlight": false,
+    "facingDirection": "Lane",
+    "available": true
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "486b8949-eb1d-405e-930e-e30810fa0372",
+    "locationlongitude": 120.9685838,
+    "locationlatitude": 14.6334992,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Orange",
+    "backlight": false,
+    "facingDirection": "Junction",
+    "available": false
+  },
+  {
+    "id": "45da6854-4fb8-4931-b2ee-533d6855b6fe",
+    "locationlongitude": 96.4343621,
+    "locationlatitude": 18.9398354,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "S",
+    "dimensions": "Goldenrod",
+    "backlight": true,
+    "facingDirection": "Avenue",
+    "available": false
+  },
+  {
+    "id": "f8a20b29-8d64-4a3a-ae21-03431051415f",
+    "locationlongitude": 119.9481515,
+    "locationlatitude": 31.7238883,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "2XL",
+    "dimensions": "Blue",
+    "backlight": false,
+    "facingDirection": "Road",
+    "available": false
+  },
+  {
+    "id": "021090db-89b2-42c9-a528-47058775b995",
+    "locationlongitude": -16.765857,
+    "locationlatitude": 32.715164,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "S",
+    "dimensions": "Teal",
+    "backlight": true,
+    "facingDirection": "Lane",
+    "available": false
+  },
+  {
+    "id": "aca1628a-2b62-4cba-a8a1-5131dc9eef18",
+    "locationlongitude": 12.2416715,
+    "locationlatitude": 9.2894242,
+    "img": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    "sqfeetSize": "XS",
+    "dimensions": "Puce",
+    "backlight": false,
+    "facingDirection": "Lane",
+    "available": true
+  }
+]

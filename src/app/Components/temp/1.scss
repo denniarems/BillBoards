@@ -1,0 +1,37 @@
+.gridgap {
+  grid-gap: 5px;
+}
+.b {
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  display: flex;
+}
+.b > * {
+  padding: 3px;
+  flex: 1 90%;
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  // margin: 3px;
+}
+
+.text {
+  // margin-top: 10rem;
+  text-align: center;
+  // height: 50%;
+  color: white;
+  text-decoration: none;
+}
+.desktop {
+  width: 30%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.tile {
+  background-color: brown;
+  margin: 5px;
+}

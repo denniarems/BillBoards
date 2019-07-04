@@ -1,0 +1,31 @@
+<div class="desktop">
+  <div class="desktopleft">
+    <cdk-virtual-scroll-viewport itemSize="10" class="example-viewport">
+      <mat-grid-list class="gridgap" cols="1" rowHeight="14:4">
+        <mat-grid-tile class="tile" *ngFor="let board of billboard">
+          <div class="b" (click)="getDetails(board)">
+            <div class="imgs">
+              <img [src]="board.imglink" alt="Photo of a billboard" />
+            </div>
+            <div class="box">
+              <h6 class="text">
+                <p>{{ board.boardId }}</p>
+                <p>{{ board.longitude }} {{ board.latitude }}</p>
+                <p>{{ board.sqfeetSize }}</p>
+                <ng-container *ngIf="board.available; else elseTemplate">
+                  <p>available</p>
+                </ng-container>
+                <ng-template #elseTemplate>
+                  <p>Unavailable</p>
+                </ng-template>
+              </h6>
+            </div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </cdk-virtual-scroll-viewport>
+  </div>
+  <div class="desktopright">
+    <app-details [board]="b"></app-details>
+  </div>
+</div>

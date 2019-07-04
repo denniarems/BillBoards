@@ -1,0 +1,55 @@
+.gridgap {
+  grid-gap: 5px;
+  margin: 5px;
+}
+.b {
+  width: calc(100% - 1px);
+  height: calc(100% - 0px);
+  display: flex;
+  position: relative;
+}
+
+.desktopleft {
+  width: 60%;
+  // margin-right: 10px;
+  // margin-left: 10px;
+}
+.tile {
+  background-color: brown;
+  border-radius: 25px;
+  // margin: 5px;
+  &:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+  }
+}
+.imgs {
+  width: 35%;
+  img {
+    position: absolute;
+    width: 35%;
+    height: 101%;
+  }
+}
+.box {
+  .text {
+    padding-left: 5px;
+  }
+}
+.desktop {
+  display: flex;
+}
+.desktopright {
+  width: 40%;
+  margin: 3px;
+  background-color: chartreuse;
+}
+.example-viewport {
+  height: 620px;
+  width: 472;
+  border: 1px solid black;
+}
+
+.example-item {
+  height: 50px;
+}
