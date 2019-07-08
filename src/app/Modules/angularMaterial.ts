@@ -11,13 +11,16 @@ import {
   MatAutocompleteModule,
   MatCardModule,
   MatGridListModule,
-  MatDialogModule
+  MatDialogModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
+
 import { ScrollingModule, ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
+    MatProgressSpinnerModule,
     ScrollingModule,
     ScrollDispatchModule,
     MatDialogModule,
@@ -35,6 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   exports: [
+    MatProgressSpinnerModule,
     ScrollDispatchModule,
     MatDialogModule,
     MatGridListModule,

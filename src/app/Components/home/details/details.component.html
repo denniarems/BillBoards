@@ -1,1 +1,15 @@
-<p>details works!</p>
+<agm-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="16"
+  [disableDefaultUI]="true"
+  [zoomControl]="true"
+  [scaleControl]="true"
+>
+  <div *ngFor="let board of billboard">
+    <agm-marker
+      [latitude]="board.longitude"
+      [longitude]="board.latitude"
+    ></agm-marker>
+  </div>
+</agm-map>

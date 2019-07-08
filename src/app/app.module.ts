@@ -3,7 +3,6 @@ import { AppService } from './Service/app.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -17,7 +16,8 @@ import { MaterialModule } from './Modules/angularMaterial';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
-
+import { AgmCoreModule } from '@agm/core';
+import { FilterPipeModule } from 'ngx-filter-pipe';
 @NgModule({
   // entryComponents: [HomeComponent],
   declarations: [
@@ -31,13 +31,17 @@ import { environment } from '../environments/environment';
   imports: [
     HttpClientModule,
     BrowserModule,
+    FilterPipeModule,
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
     AppRoutingModule,
     LayoutModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCg1gey4ttLF2Z7KF13_D10B_cOnpcbm-c'
+    })
   ],
   providers: [GetDataService, AppService],
   bootstrap: [AppComponent]
