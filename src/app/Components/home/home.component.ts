@@ -1,10 +1,11 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
-// import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { BillBoard } from 'src/app/Interface/BillBoard';
 import { GetDataService } from '../../Service/get-data.service';
 import { AppService } from '../../Service/app.service';
 import { Router } from '@angular/router';
-
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -30,8 +31,12 @@ export class HomeComponent implements OnInit {
   constructor(
     public gds: GetDataService,
     public appservice: AppService,
-    public router: Router
+    public router: Router,
+    private breakpointObserver: BreakpointObserver
   ) {}
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe(Breakpoints.XSmall)
+    .pipe(map(result => result.matches));
   remove_duplicates(arr: any[] | Iterable<unknown>) {
     const s = new Set(arr);
     const it = s.values();

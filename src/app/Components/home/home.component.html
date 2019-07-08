@@ -95,7 +95,7 @@
         </mat-grid-list>
       <!-- </cdk-virtual-scroll-viewport> -->
     </div>
-    <div class="desktopright">
+    <div class="desktopright" *ngIf="!(isHandset$ | async)">
       <app-details></app-details>
     </div>
   </div>

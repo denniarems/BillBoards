@@ -177,3 +177,12 @@ ul {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 600px) {
+  #filter {
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+  .desktopleft {
+    width: 100%;
+  }
+}
