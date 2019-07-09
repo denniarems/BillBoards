@@ -2,29 +2,18 @@ mat-spinner {
   margin-top: 10%;
   margin-left: 45%;
 }
-.gridgap {
-  // grid-gap: 20px;
-  margin: 10px;
-}
 .b {
-  width: calc(100% - 0px);
-  height: calc(100% - 0px);
+  width: calc(100% - 0.1rem);
+  height: calc(100% - 0.1rem);
   display: flex;
   position: relative;
-  // margin-bottom: 5px;
 }
 
 .desktopleft {
   width: 60%;
-  // margin-right: 10px;
-  // margin-left: 10px;
 }
 .tile {
   background-color: #ffffff;
-  border-radius: 5px;
-  // max-width: 90%;
-  // right: 10%;
-  margin-bottom: 5px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.027),
     2px 2px 2px 2px rgba(0, 0, 0, 0.055);
   transform: scale(0.99, 0.94);
@@ -44,64 +33,42 @@ mat-spinner {
     position: absolute;
     width: 40%;
     height: 100%;
-    // margin: 5px;
   }
 }
 .box {
-  // justify-content: space-between;
-  margin-left: 10px;
-  min-width: 300px;
+  left: 4%;
+  min-width: 23rem;
   display: flex;
   position: relative;
   flex-direction: column;
-  .text {
-    margin-left: 100px;
-  }
 }
 .desktop {
   display: flex;
 }
 .desktopright {
   width: 40%;
-  margin: 3px;
-  // height: 300px;
   background-color: white;
   position: fixed;
   margin-left: 60%;
 }
 .example-viewport {
-  height: 620px;
-  width: 472;
-  // border: 1px solid black;
-}
-
-.example-item {
-  height: 50px;
-}
-.mat-grid-tile .mat-figure {
-  margin-bottom: 10px;
+  height: 56vmax;
+  width: 100%;
 }
 
 .available {
-  // flex-grow: 1;
-  // left: 2;
-  width: 150px;
-  margin-left: 88px;
+  margin-left: 24.9%;
   button {
-    // margin: 50%;
-    margin-top: 188px;
+    margin-top: calc(25rem - 1vw);
     // margin-left: 10px;
-    width: 160px;
-    height: 55px;
+    width: 15rem;
+    height: 3.5rem;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 ul {
   list-style: none;
-  // font-size: 1.3rem;
-  margin: 10px;
-  // padding: 0;
   .size {
     li {
       display: inline;
@@ -110,12 +77,12 @@ ul {
 }
 #boardId {
   margin: 0px 0px 7px 0px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   // text-decoration: underline;
 }
 #boardname {
   margin: 0px 0px 5px 0px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   // font-style: italic;
   font-weight: bolder;
   margin-bottom: 0;
@@ -123,67 +90,72 @@ ul {
 #boardplace {
   margin: 0px 0px 5px 0px;
   margin-top: 0;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 #boardpro {
   margin: 0px 0px 5px 0px;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 #boardlight {
   margin: 0px 0px 5px 0px;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 #boardavail {
   margin: 0px 0px 5px 0px;
   margin-bottom: 5px;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 #boardsq {
   margin: 0px 0px 5px 0px;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 #filter {
-  margin-left: 50px;
-  margin-top: 10px;
+  margin-left: 25%;
+  margin-top: 0.5%;
 }
-@media screen and (max-width: 600px) {
-  #filter {
-    margin-left: 120px;
-    margin-right: 60px;
-    margin-top: 0px;
-  }
-  .desktopleft {
-    width: 100%;
-  }
-}
-@media screen and (width: 1900px) {
-  #filter {
-    margin-left: 18%;
-  }
-  .available {
-    margin-left: 40px;
-    button {
-      margin-top: 188px;
-      width: 180px;
-      height: 75px;
-      font-weight: bold;
-      font-size: 1.3rem;
 
-      margin-left: 148px;
-      margin-top: 243px;
-    }
-  }
-  ul {
-    margin-top: 27px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 35px;
-  }
-  #boardname {
-    font-size: 36px;
-  }
-  #boardsq #boardId #boardplace #boardpro #boardlight #boardavail #boardsq {
-    font-size: 20px;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   #filter {
+//     margin-left: 120px;
+//     margin-right: 60px;
+//     margin-top: 0px;
+//   }
+//   .desktopleft {
+//     width: 100%;
+//   }
+// }
+// @media screen and (min-width: 1900px) {
+//   #filter {
+//     margin-left: 18%;
+//   }
+//   .available {
+//     margin-left: 21%;
+//     margin-top: 6%;
+//     button {
+//       margin-top: 25%;
+//       width: 180px;
+//       height: 75px;
+//       font-weight: bold;
+//       font-size: 1.4rem;
+
+//       margin-left: 8rem;
+//       margin-top: 13rem;
+//     }
+//   }
+//   .box {
+//     max-width: 20%;
+//   }
+//   ul {
+//     margin-top: 27px;
+//     margin-right: 0px;
+//     margin-bottom: 0px;
+//     margin-left: 35px;
+//   }
+//   #boardname {
+//     font-size: 36px;
+//   }
+//   #boardsq #boardId #boardplace #boardpro #boardlight #boardavail #boardsq {
+//     font-size: 20px;
+//   }
+// }

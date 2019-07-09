@@ -1,5 +1,5 @@
 <ng-container *ngIf="billboard.length == 0; else home">
-  <mat-spinner strokeWidth="30" [diameter]="120"></mat-spinner>
+  <mat-spinner strokeWidth="5" [diameter]="120"></mat-spinner>
 </ng-container>
 <ng-template #home>
   <div class="desktop">
@@ -58,7 +58,7 @@
           </mat-select>
         </mat-form-field>
       </div>
-      <!-- <cdk-virtual-scroll-viewport itemSize="10" class="example-viewport"> -->
+      <cdk-virtual-scroll-viewport itemSize="10" class="example-viewport">
         <mat-grid-list class="gridgap" cols="1" rowHeight="14:4">
           <div class="out">
             <mat-grid-tile
@@ -93,7 +93,7 @@
             </mat-grid-tile>
           </div>
         </mat-grid-list>
-      <!-- </cdk-virtual-scroll-viewport> -->
+      </cdk-virtual-scroll-viewport>
     </div>
     <div class="desktopright" *ngIf="!(isHandset$ | async)">
       <app-details></app-details>
