@@ -147,6 +147,16 @@ ul {
   margin-left: 50px;
   margin-top: 10px;
 }
+@media screen and (max-width: 600px) {
+  #filter {
+    margin-left: 120px;
+    margin-right: 60px;
+    margin-top: 0px;
+  }
+  .desktopleft {
+    width: 100%;
+  }
+}
 @media screen and (width: 1900px) {
   #filter {
     margin-left: 18%;
@@ -175,14 +185,5 @@ ul {
   }
   #boardsq #boardId #boardplace #boardpro #boardlight #boardavail #boardsq {
     font-size: 20px;
-  }
-}
-@media screen and (min-width: 600px) {
-  #filter {
-    margin-left: 5px;
-    margin-top: 0px;
-  }
-  .desktopleft {
-    width: 100%;
   }
 }
