@@ -157,28 +157,44 @@
       class="mobcard"
       *ngFor="let board of billboard | filterBy: billboardFilter"
     >
-      <mat-card class="example-card">
+      <mat-card class="card">
         <img mat-card-image [src]="board.imglink" alt="Photo of a billboard" />
-        <mat-card-content>
-          <ul>
-            <li id="boardId">Billboard ID: AB0{{ board.boardId }}</li>
-            <li id="boardname">billboard Name{{ board.name }}</li>
-            <li id="boardplace">{{ board.place }}</li>
-            <li id="boardpro">
-              {{ board.width }} <span>x</span> {{ board.height }}
-              {{ board.facingDirection }}
-            </li>
-            <li id="boardsq">{{ board.sqfeetSize }} sqft</li>
-            <li id="boardlight" *ngIf="board.backLight">BackLight</li>
-            <li id="boardavail" *ngIf="board.available">Available</li>
-          </ul>
-        </mat-card-content>
-        <mat-card-actions class="actions">
-          <button class="enquire" mat-raised-button color="accent">Enquire</button>
-          <a href="http://maps.google.com/maps?z=12&t=m&q=loc:{{board.longitude}}+{{board.latitude}}">
-            <button class="direction" mat-raised-button color="accent">Direction</button>
-          </a>
-        </mat-card-actions>
+        <div class="dcard">
+          <mat-card-content>
+            <div class="content">
+              <ul>
+                <li id="boardId">Billboard ID: AB0{{ board.boardId }}</li>
+                <li id="boardname">billboard Name{{ board.name }}</li>
+                <li id="boardplace">{{ board.place }}</li>
+                <li id="boardpro">
+                  {{ board.width }} <span>x</span> {{ board.height }}
+                  {{ board.facingDirection }}
+                </li>
+                <li id="boardsq">{{ board.sqfeetSize }} sqft</li>
+                <li id="boardlight" *ngIf="board.backLight">BackLight</li>
+                <li id="boardavail" *ngIf="board.available">Available</li>
+              </ul>
+            </div>
+          </mat-card-content>
+          <div class="actions">
+            <mat-card-actions>
+              <div class="btn">
+                <a
+                  href="http://maps.google.com/maps?z=12&t=m&q=loc:{{
+                    board.longitude
+                  }}+{{ board.latitude }}"
+                >
+                  <button class="direction" mat-raised-button color="accent">
+                    Direction
+                  </button> </a
+                ><br />
+                <button class="enquire" mat-raised-button color="accent">
+                  Enquire
+                </button>
+              </div>
+            </mat-card-actions>
+          </div>
+        </div>
       </mat-card>
     </div>
   </div>

@@ -30,21 +30,10 @@ mat-spinner {
   margin-top: 10%;
   margin-left: 35%;
 }
-
 #filter {
-  margin-left: 25%;
-  margin-top: 0.5%;
-  @include respond(tab) {
-    margin-left: 15%;
-  }
-  @include respond(laptop) {
-    margin-left: 18%;
-  }
-  @include respond(nlaptop) {
-    margin-left: 3%;
-  }
-  @include respond(llaptop) {
-    margin-left: 10%;
+  margin: 0.5% 1% 0 1%;
+  .mat-form-field {
+    width: calc(98% / 4);
   }
 }
 .b {
@@ -304,8 +293,11 @@ ul {
 }
 .mobile {
   #filter {
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 0.5%;
+    // .mat-form-field-infix {
+    //   width: 7em;
+    // }
   }
   .mobcard {
     background-color: #ffffff;
@@ -319,9 +311,17 @@ ul {
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.01),
         5px 5px 5px 5px rgba(0, 0, 0, 0.01);
     }
+    .dcard {
+      display: flex;
+    }
+    .content {
+      display: inline-flex;
+    }
   }
   ul {
-    padding: 2%;
+    // width: 10rem;
+    // margin-right: 50%;
+    padding: 0em 5em 0em 1em;
     #boardId {
       margin: 0px 0px 7px 0px;
       font-size: 1.1em;
@@ -356,11 +356,18 @@ ul {
     }
   }
   .actions {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-left: auto;
     .enquire {
       left: 0;
+      width: 6rem;
+      margin-left: 0;
     }
     .direction {
-      left: 5vw;
+      width: 6rem;
+      margin-left: 0;
+      margin-bottom: 10%;
     }
   }
 }
