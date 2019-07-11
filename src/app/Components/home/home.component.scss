@@ -28,7 +28,7 @@
 
 mat-spinner {
   margin-top: 10%;
-  margin-left: 45%;
+  margin-left: 35%;
 }
 
 #filter {
@@ -303,4 +303,56 @@ ul {
   }
 }
 .mobile {
+  #filter {
+    margin-left: 5%;
+    margin-top: 0.5%;
+  }
+  .mobcard {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.027),
+      2px 2px 2px 2px rgba(0, 0, 0, 0.055);
+    transform: scale(0.95, 0.95);
+    &:hover {
+      transform: scale(0.97, 0.96);
+      background-color: white;
+      transition: 0.3s;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.01),
+        5px 5px 5px 5px rgba(0, 0, 0, 0.01);
+    }
+  }
+  ul {
+    padding: 2%;
+    #boardId {
+      margin: 0px 0px 7px 0px;
+      font-size: 1.1em;
+    }
+    #boardname {
+      margin: 0px 0px 5px 0px;
+      font-size: 1.2em;
+      font-weight: bolder;
+      margin-bottom: 0;
+    }
+    #boardplace {
+      margin: 0px 0px 5px 0px;
+      margin-top: 0;
+      font-size: 1em;
+    }
+    #boardpro {
+      margin: 0px 0px 5px 0px;
+      font-size: 1em;
+    }
+    #boardlight {
+      margin: 0px 0px 5px 0px;
+      font-size: 1em;
+    }
+    #boardavail {
+      margin: 0px 0px 5px 0px;
+      margin-bottom: 5px;
+      font-size: 1em;
+    }
+    #boardsq {
+      margin: 0px 0px 5px 0px;
+      font-size: 1em;
+    }
+  }
 }
