@@ -15,10 +15,6 @@ import { map } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
   billboard = [];
   billboard1 = [];
-  selectedBackLight: any = '';
-  selectedPlace: any = '';
-  selectedId: any = '';
-  selectedAvailable: any = '';
   spin = true;
   place = [];
 

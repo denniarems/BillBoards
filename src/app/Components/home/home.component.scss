@@ -1,31 +1,21 @@
 @mixin respond($breakpoint) {
-  @if $breakpoint==mobile {
-    @media only screen and (max-width: 600px) {
-      @content;
-    }
-  }
-  @if $breakpoint==tab-port {
-    @media (max-width: 900px) {
-      @content;
-    }
-  }
-  @if $breakpoint==tab-land {
-    @media screen and (max-width: 1024px) {
+  @if $breakpoint==tab {
+    @media (min-width: 810px) and(max-width: 1020px) {
       @content;
     }
   }
   @if $breakpoint==laptop {
-    @media screen and (min-width: 1025px) and (max-width: 1279px) {
+    @media screen and (min-width: 1021px) and (max-width: 1279px) {
       @content;
     }
   }
   @if $breakpoint==nlaptop {
-    @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    @media screen and (min-width: 1280px) and (max-width: 1400px) {
       @content;
     }
   }
   @if $breakpoint==llaptop {
-    @media screen and (min-width: 1441px) and (max-width: 1800px) {
+    @media screen and (min-width: 1401px) and (max-width: 1800px) {
       @content;
     }
   }
@@ -44,8 +34,11 @@ mat-spinner {
 #filter {
   margin-left: 25%;
   margin-top: 0.5%;
+  @include respond(tab) {
+    margin-left: 15%;
+  }
   @include respond(laptop) {
-    margin-left: 7.5%;
+    margin-left: 18%;
   }
   @include respond(nlaptop) {
     margin-left: 3%;
@@ -93,8 +86,12 @@ mat-spinner {
   display: flex;
   position: relative;
   flex-direction: column;
+  @include respond(tab) {
+    left: calc(13% + 5rem);
+    // margin-left: calc(0.1em + 1vw);
+  }
   @include respond(laptop) {
-    left: calc(2% + 0.5rem);
+    left: calc(12% + 5rem);
     // margin-left: calc(0.1em + 1vw);
   }
   @include respond(nlaptop) {
@@ -121,6 +118,9 @@ mat-spinner {
 
 .available {
   margin-left: 24.9%;
+  @include respond(tab) {
+    margin-left: 1em;
+  }
   @include respond(laptop) {
     margin-left: 1em;
   }
@@ -134,8 +134,14 @@ mat-spinner {
     height: 3.5rem;
     font-weight: bold;
     font-size: 1.4rem;
+    @include respond(tab) {
+      margin-top: calc(6.57em + 1vw);
+      width: 7rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
     @include respond(laptop) {
-      margin-top: calc(10.2em - 1vw);
+      margin-top: calc(7em - 1vw);
       width: 10rem;
       height: 3rem;
       font-size: 1.2rem;
@@ -160,12 +166,21 @@ ul {
       display: inline;
     }
   }
+  @include respond(tab) {
+    margin: 3px 0px 2px 0px;
+  }
 }
+
 #boardId {
   margin: 0px 0px 7px 0px;
   font-size: 1.5rem;
+
+  @include respond(tab) {
+    margin: 0px 0px 4px 0px;
+    font-size: 0.9rem;
+  }
   @include respond(laptop) {
-    font-size: 1rem;
+    font-size: 0.958rem;
   }
   @include respond(nlaptop) {
     font-size: 1rem;
@@ -180,8 +195,13 @@ ul {
   // font-style: italic;
   font-weight: bolder;
   margin-bottom: 0;
+
+  @include respond(tab) {
+    margin: 0px 0px 2px 0px;
+    font-size: 1.1rem;
+  }
   @include respond(laptop) {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   @include respond(nlaptop) {
     font-size: 1.2rem;
@@ -194,8 +214,13 @@ ul {
   margin: 0px 0px 5px 0px;
   margin-top: 0;
   font-size: 1.4rem;
+
+  @include respond(tab) {
+    margin: 0px 0px 2px 0px;
+    font-size: 0.8rem;
+  }
   @include respond(laptop) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   @include respond(nlaptop) {
     font-size: 0.9rem;
@@ -207,8 +232,13 @@ ul {
 #boardpro {
   margin: 0px 0px 5px 0px;
   font-size: 1.4rem;
+
+  @include respond(tab) {
+    margin: 0px 0px 2px 0px;
+    font-size: 0.8rem;
+  }
   @include respond(laptop) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   @include respond(nlaptop) {
     font-size: 0.9rem;
@@ -220,8 +250,13 @@ ul {
 #boardlight {
   margin: 0px 0px 5px 0px;
   font-size: 1.4rem;
+
+  @include respond(tab) {
+    font-size: 0.8rem;
+    margin: 0px 0px 2px 0px;
+  }
   @include respond(laptop) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   @include respond(nlaptop) {
     font-size: 0.9rem;
@@ -234,8 +269,13 @@ ul {
   margin: 0px 0px 5px 0px;
   margin-bottom: 5px;
   font-size: 1.4rem;
+
+  @include respond(tab) {
+    margin: 0px 0px 2px 0px;
+    font-size: 0.8rem;
+  }
   @include respond(laptop) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   @include respond(nlaptop) {
     font-size: 0.9rem;
@@ -247,8 +287,13 @@ ul {
 #boardsq {
   margin: 0px 0px 5px 0px;
   font-size: 1.4rem;
+
+  @include respond(tab) {
+    margin: 0px 0px 2px 0px;
+    font-size: 0.8rem;
+  }
   @include respond(laptop) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   @include respond(nlaptop) {
     font-size: 0.9rem;
@@ -257,40 +302,5 @@ ul {
     font-size: 1rem;
   }
 }
-
-// @media screen and (max-width: 1280px) {
-// }
-// @media screen and (min-width: 1900px) {
-//   #filter {
-//     margin-left: 18%;
-//   }
-//   .available {
-//     margin-left: 21%;
-//     margin-top: 6%;
-//     button {
-//       margin-top: 25%;
-//       width: 180px;
-//       height: 75px;
-//       font-weight: bold;
-//       font-size: 1.4rem;
-
-//       margin-left: 8rem;
-//       margin-top: 13rem;
-//     }
-//   }
-//   .box {
-//     max-width: 20%;
-//   }
-//   ul {
-//     margin-top: 27px;
-//     margin-right: 0px;
-//     margin-bottom: 0px;
-//     margin-left: 35px;
-//   }
-//   #boardname {
-//     font-size: 36px;
-//   }
-//   #boardsq #boardId #boardplace #boardpro #boardlight #boardavail #boardsq {
-//     font-size: 20px;
-//   }
-// }
+.mobile {
+}

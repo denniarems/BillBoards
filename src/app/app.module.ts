@@ -18,6 +18,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { AgmCoreModule } from '@agm/core';
 import { FilterPipeModule } from 'ngx-filter-pipe';
+
 @NgModule({
   // entryComponents: [HomeComponent],
   declarations: [
