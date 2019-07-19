@@ -8,9 +8,7 @@ import * as flamelink from 'flamelink';
 import 'flamelink/content';
 import 'flamelink/storage';
 import { FirebaseApp } from '@angular/fire';
-import { BillBoard } from '../Interface/BillBoard';
 import { AppService } from './app.service';
-import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
